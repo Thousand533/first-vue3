@@ -1,24 +1,23 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
+import AppFeature from './components/AppFeature.vue'
+import HeaderSection from './components/HeaderSection.vue'
+import HeroSection from './components/HeroSection.vue'
+import LogoCloud from './components/LogoCloud.vue'
+import StatsSection from './components/StatsSection.vue'
 </script>
 
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-    </div>
-  </header>
-
   <main>
-    <TheWelcome />
+    <HeroSection></HeroSection>
+    <LogoCloud> </LogoCloud>
+    <AppFeature></AppFeature>
+    <HeaderSection></HeaderSection>
+    <StatsSection></StatsSection>
   </main>
 </template>
 
 <style scoped>
-header {
+/* header {
   line-height: 1.5;
 }
 
@@ -43,5 +42,5 @@ header {
     place-items: flex-start;
     flex-wrap: wrap;
   }
-}
+} */
 </style>
